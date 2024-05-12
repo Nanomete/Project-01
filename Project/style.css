@@ -1,0 +1,54 @@
+/* Background */
+body {
+    background-image: url(img/Space\ stars.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: min-content;
+}
+
+.First-box {
+    margin-top: 90px;
+}
+
+/* Background opacity */
+.d-flex {
+    background-color: rgb(41, 41, 41, 0.6);
+    z-index: -1;
+}
+
+/* Animation */
+.d-flex {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.d-flex:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.d-flex img {
+    animation-duration: 5s;
+    animation-iteration-count: inherit;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-9px);}
+    100% {transform: translateY(0);}
+}
+
+
+/* Responsive */
+@media (max-width: 576px) {
+    .carousel-caption {
+        display: none;
+    }
+
+    .d-flex img {
+        margin-top: 60px;
+    }
+}
+
